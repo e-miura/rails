@@ -1,0 +1,24 @@
+# coding: utf-8
+<h1>商品一覧</h1>
+<table>
+<tr>
+  <th>在庫</td>
+  <th>商品コード</td>
+  <th>商品名</td>
+  <th>商品名カナ</td>
+  <th>金額</td>
+  <th>仕入値</td>
+</tr>
+<% @datas.each do |data| %>
+  <tr>
+    <td><%= data.availability ? image_tag('stock4_4.gif') : "" %></td>
+    <td><%= link_to data.code, products_detail_path(:id => data.id) %></td>
+    <td><%= data.name %></td>
+    <td><%= data.name_kana %></td>
+    <td><%= data.price %></td>
+    <td><%= data.purchase_cost %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+<%= link_to "CSV出力", products_index_path(:format => :csv), class: "btn" %>

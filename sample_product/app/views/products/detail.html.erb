@@ -1,0 +1,14 @@
+#coding: utf-8
+
+<h1>商品詳細</h1>
+
+<p>NO：<%= @item.id %></p>
+<p>商品コード：<%= @item.code %></p>
+<p>商品名：<%= @item.name %></p>
+<p>商品名カナ：<%= @item.name_kana %></p>
+<p>金額：<%= @item.price %></p>
+<p>仕入値：<%= @item.purchase_cost %></p>
+<p>在庫：<%= @item.availability ? "在庫あり" : "在庫なし" %></p>
+
+
+

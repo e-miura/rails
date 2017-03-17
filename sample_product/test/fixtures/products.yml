@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: MyString
+  name: MyString
+  name_kana: MyString
+  price: 1
+  purchase_cost: 1
+  availability: false
+
+two:
+  code: MyString
+  name: MyString
+  name_kana: MyString
+  price: 1
+  purchase_cost: 1
+  availability: false
